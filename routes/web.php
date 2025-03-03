@@ -9,7 +9,11 @@ Route::get('/abc', function(){
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
+// two ways of rendering a view 17 - 20
 Route::get('/home', function(){
     return view('home');
 });
@@ -22,3 +26,9 @@ Route::get('/homeWithoutBlade', function(){
 Route::get('/home/{nm}', function($nm){
     return view("home", ['name' => $nm]);
 });
+
+// two ways of redirection 30 - 33
+Route::get('/rd', function(){
+    return redirect('welcome');
+});
+Route::redirect('/rd','welcome');
