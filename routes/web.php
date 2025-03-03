@@ -37,3 +37,4 @@ Route::redirect('/rd','welcome');
 Route::get('/greet',[UserController::class,'sayHello']);
 Route::get('/greet/{nm}',[UserController::class,'getName']);
 Route::get('/user',[UserController::class,'showUserView']);
+Route::get('/user/{nm}',[UserController::class,'getNameInView']);

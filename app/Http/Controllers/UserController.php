@@ -17,4 +17,8 @@ class UserController extends Controller
     function showUserView(){
         return view("user");
     }
+    
+    function getNameInView($nm){
+        return view("user", ['naam' => $nm]);
+    }
 }
