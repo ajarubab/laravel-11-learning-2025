@@ -19,6 +19,11 @@ class UserController extends Controller
     }
     
     function getNameInView($nm){
+        // echo "The Name : ".$nm;
         return view("user", ['naam' => $nm]);
+    }
+
+    function adminLogin(){
+        return view("admin.login");
     }
 }
