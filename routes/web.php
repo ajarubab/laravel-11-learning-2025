@@ -20,6 +20,5 @@ Route::get('/homeWithoutBlade', function(){
 });
 
 Route::get('/home/{nm}', function($nm){
-    echo $nm;
-    return view("home");
+    return view("home", ['name' => $nm]);
 });
