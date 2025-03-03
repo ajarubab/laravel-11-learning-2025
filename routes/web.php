@@ -39,3 +39,5 @@ Route::get('/greet/{nm}',[UserController::class,'getName']);
 Route::get('/user',[UserController::class,'showUserView']);
 Route::get('/user/{nm}',[UserController::class,'getNameInView']);
 Route::get('/admin',[UserController::class,'adminLogin']);
+
+Route::view('/about','about',['naam'=>"Raja kumar"]);
