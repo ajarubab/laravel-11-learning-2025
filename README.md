@@ -79,4 +79,5 @@ php artisan serve
 CTRL + C
 
 php artisan make:controller ControllerName      // to make a controller
+php artisan make:view viewname                  // to make a view
 
