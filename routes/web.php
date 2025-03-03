@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/abc', function(){
     return "Jai Siya Ram";
@@ -32,3 +33,5 @@ Route::get('/rd', function(){
     return redirect('welcome');
 });
 Route::redirect('/rd','welcome');
+
+Route::get('/greet',[UserController::class,'sayHello']);
