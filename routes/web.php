@@ -18,3 +18,8 @@ Route::view('/home',"home");
 Route::get('/homeWithoutBlade', function(){
     return view('homeWithNoBlade');
 });
+
+Route::get('/home/{nm}', function($nm){
+    echo $nm;
+    return view("home");
+});
