@@ -13,4 +13,8 @@ class UserController extends Controller
     function getName($name){
         return "Hello viewers, My Name is : " . $name;
     }
+
+    function showUserView(){
+        return view("user");
+    }
 }
