@@ -35,3 +35,4 @@ Route::get('/rd', function(){
 Route::redirect('/rd','welcome');
 
 Route::get('/greet',[UserController::class,'sayHello']);
+Route::get('/greet/{nm}',[UserController::class,'getName']);

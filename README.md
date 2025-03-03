@@ -64,3 +64,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+------------------------------- TERMINAL COMMANDS --------------------------------------------
+START APACHE SERVER ( from XAMPP or any other way)
+
+cd Desktop
+laravel new laravel-11-learning     // to create a new project
+cd laravel-11-learning
+php artisan serve                   // to run laravel server
+CTRL + C                            // to stop laravel server
+
+php artisan serve
+CTRL + C
+
+php artisan make:controller ControllerName      // to make a controller
+
